@@ -1,0 +1,19 @@
+name: base64.decode
+description: decodes a base 64 encoded string per RFC4648
+inputs:
+  encodedValue:
+    string:
+      description: string to decode
+outputs:
+  decodedValue:
+    string:
+      description: decoded string
+version: 1.0.0
+run:
+  container:
+    image: { ref: 'node:8.1.0-alpine' }
+    cmd: [node, /index.js]
+    envVars: { encodedValue }
+    files: { /index.js }
+    stdOut:
+      decodedValue=: decodedValue
