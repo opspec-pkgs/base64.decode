@@ -9,7 +9,7 @@ All notable changes will be documented in this file in accordance with
 
 ## Changed
 
-- connectionString no longer written to stdOut
+- decodedValue no longer written to stdOut
 
 ## \[1.0.0] - 2017-07-18
 
