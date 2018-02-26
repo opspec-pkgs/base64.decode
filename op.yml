@@ -8,12 +8,12 @@ outputs:
   decodedValue:
     string:
       description: decoded string
-version: 1.0.0
+version: 1.0.1
 run:
   container:
-    image: { ref: 'node:8.1.0-alpine' }
-    cmd: [node, /index.js]
+    image: { ref: 'node:9.5.0-alpine' }
+    cmd: [node, /cmd.js]
     envVars: { encodedValue }
-    files: { /index.js }
-    stdOut:
-      decodedValue=: decodedValue
+    files:
+      /cmd.js:
+      /decodedValue: $(decodedValue)
