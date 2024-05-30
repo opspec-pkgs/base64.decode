@@ -1,4 +1,5 @@
-[![Build Status](https://github.com/opspec-pkgs/base64.decode/workflows/build/badge.svg?branch=main)](https://github.com/opspec-pkgs/base64.decode/actions?query=workflow%3Abuild+branch%3Amain)
+[![build](https://github.com/opspec-pkgs/base64.decode/actions/workflows/build.yml/badge.svg)](https://github.com/opspec-pkgs/base64.decode/actions/workflows/build.yml)
+
 
 # Problem statement
 
